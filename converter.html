@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Cinzel:wght@500&family=Croissant+One&family=Major+Mono+Display&family=Nova+Square&family=Pacifico&family=Press+Start+2P&family=Rajdhani:wght@300&family=Roboto+Condensed&family=Teko:wght@300&family=Vina+Sans&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+        }
+
+        .navbar {
+            position: fixed;
+            height: 12vh;
+            width: 100%;
+            background-color: rgba(62, 131, 97, 0.476);
+            padding-top: 3vh;
+            z-index: 1;
+        }
+
+        .first {
+            height: 80vh;
+            width: 100%;
+            background-color: rgb(229, 233, 255);
+        }
+
+        .second {
+            height: 25vh;
+            width: 90.9%;
+            background-color: rgb(26, 17, 55);
+            padding-top: 2vh;
+            padding-left: 9vw;
+        }
+
+        .box {
+            height: 7vh;
+            width: 16vw;
+            display: flex;
+        }
+
+        .logo {
+            height: 8vh;
+            width: 8vw;
+            margin-top: 1vh;
+            margin-right: -1vw;
+
+        }
+
+        .text {
+            font-family: Bebas Neue;
+            font-size: x-large;
+        }
+
+        .anchor {
+            padding-top: 2.5vh;
+            margin-left: 22vw;
+        }
+
+        .ae {
+            text-decoration: none;
+            color: black;
+            font-size: 1.4rem;
+            margin-right: 2vw;
+            font-family: Rajdhani;
+            font-weight: bold;
+        }
+
+        .joinus {
+            margin-left: auto;
+            margin-right: 1vw;
+            margin-top: 1.5vh;
+            border: 1px solid rgb(26, 17, 55);
+            border-radius: 25px;
+            width: 8vw;
+            padding-left: 1.6vw;
+            padding-top: 2vh;
+            height: 5.5vh;
+            background-color: black;
+        }
+
+        .ee {
+            text-decoration: none;
+            color: white;
+            font-family: Rajdhani;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        .ae:hover {
+            text-decoration: underline;
+            color: rgb(26, 17, 55);
+        }
+
+        .ee:hover {
+            text-decoration: underline;
+        }
+
+        body {
+            display: flex;
+            min-height: 100vh;
+            
+            /* background: #000000; */
+        }
+
+        .header {
+            background-color: #ffffff;
+            color: #050505;
+            left: 0;
+            position: fixed;
+            right: 0;
+            top: 0;
+            width: 100%;
+            z-index: 9999999;
+            text-align: center;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 800;
+            color: rgb(0, 0, 0)
+        }
+
+        ::selection {
+            color: #000000;
+            background: #ffffff;
+        }
+
+        .wrapper {
+            margin-top: 20vh;
+            margin-left: 5vw;
+            height: 65vh;
+            width: 85vw;
+            padding: 30px;
+            border: 1px solid;
+            border-radius: 7px;
+            background: rgba(26, 17, 55, 0.24);
+            box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.05);
+            /* background: linear-gradient(0.50turn, #7e87e3,     #000b88d4); */
+            /* background: linear-gradient(#e66465, #9198e5); */
+        }
+
+        .wrapper header {
+            font-size: 30px;
+            font-weight: 500;
+            font-family: Bebas Neue;
+        }
+
+        .wrapper form {
+            margin: 40px 0 20px 0;
+        }
+
+        form :where(input, select, button) {
+            width: 100%;
+            outline: none;
+            border-radius: 5px;
+            border: none;
+        }
+
+        form p {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        form input {
+            height: 50px;
+            font-size: 17px;
+            padding: 0 15px;
+            border: 1px solid #999;
+        }
+
+        form input:focus {
+            padding: 0 14px;
+            border: 2px solid #0a0a0a;
+        }
+
+        form .drop-list {
+            display: flex;
+            margin-top: 20px;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .drop-list .select-box {
+            display: flex;
+            width: 40vw;
+            height: 45px;
+            align-items: center;
+            border-radius: 5px;
+            justify-content: center;
+            border: 1px solid #999;
+        }
+        option{
+            width: 40vw;
+            text-align: center;
+        }
+
+        .select-box img {
+            max-width: 21px;
+        }
+
+        .select-box select {
+            /* width: auto; */
+            font-size: 16px;
+            background: none;
+            /* margin: 0 -5px 0 5px; */
+        }
+
+
+        .drop-list {
+            cursor: pointer;
+            margin-top: 30px;
+            font-size: 22px;
+            /* height: 10vh; */
+        }
+
+        form .exchange-rate {
+            font-size: 17px;
+            margin: 20px 0 30px;
+        }
+
+        form button {
+            height: 52px;
+            color: white;
+            font-size: 17px;
+            cursor: pointer;
+            background: black;
+            transition: 0.3s ease;
+        }
+        form button:hover{
+        text-decoration: underline;
+        }
+        header {
+            color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div style="display: flex;">
+            <div class="box">
+                <img src="logo2.svg" class="logo" alt="Logo">
+                <h3 class="text">Global Exchange<span style="color: rgb(26,17,55);"> Hub</span></h3>
+            </div>
+            <div class="anchor">
+                <a href="index.html" class="ae">Home</a>
+                <a href="index.html#desc" class="ae">About</a>
+                <a href="index.html#team" class="ae">Team-Info</a>
+                <a href="index.html#contact" class="ae">Contact-Us</a>
+            </div>
+            <div class="joinus">
+                <a href="login.html" class="ee">Get in touch</a>
+            </div>
+        </div>
+    </div>
+    <!-- Converter -->
+    <div class="wrapper">
+        <header style="font-size: 3rem;border-bottom: 1px solid rgba(62, 131, 97);width: 27vw;" >Currency Converter</header>
+        <form action="#">
+            <div class="drop-list">
+                <div class="from">
+                    <!-- <p>From</p> -->
+                    <div class="select-box">
+                        <select id="fromCurrency" >
+                            <option value="">--- From ---</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="to">
+                    <!-- <p>To</p> -->
+                    <div class="select-box">
+                        <select id="toCurrency" >
+                            <option value="">--- To ---</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="amount">
+                <!-- <p>Enter Amount</p> -->
+                <div style="display: flex;margin-top: 3vh;" >
+                    <input type="number"  id="amount" style="width: 38vw;height: 15vh;font-size: 2rem;" placeholder="Enter Amount" >
+                    <input type="text" id="pope" style="width: 38vw;margin-left: 4.5vw;height:15vh ;font-size: 2rem;" placeholder="Converted Amount" disabled >
+                </div>
+            </div>
+
+            <div class="exchange-rate"><p id="result" ></p></div>
+            <button onclick="convertCurrency(event)" >Get Exchange Rate</button>
+        </form>
+    </div>
+</body>
+<script>
+    function convertCurrency(event) {
+        event.preventDefault();
+
+        const amount = document.getElementById('amount').value;
+        const fromCurrency = document.getElementById('fromCurrency').value;
+        const toCurrency = document.getElementById('toCurrency').value;
+
+        fetch(`https://api.exchangerate-api.com/v4/latest/${fromCurrency}`)
+            .then(response => response.json())
+            .then(data => {
+                const rate = data.rates[toCurrency];
+                const result = amount * rate;
+                document.getElementById("pope").value= result.toFixed(2);
+            })
+            .catch(error => console.error('Error:', error));
+    }
+
+    // Populate currency options
+    fetch('https://api.exchangerate-api.com/v4/latest/USD')
+        .then(response => response.json())
+        .then(data => {
+            const currencies = Object.keys(data.rates);
+            const selectFrom = document.getElementById('fromCurrency');
+            const selectTo = document.getElementById('toCurrency');
+
+            currencies.forEach(currency => {
+                const option = document.createElement('option');
+                option.value = currency;
+                option.text = currency;
+                selectFrom.add(option);
+
+                const optionTo = document.createElement('option');
+                optionTo.value = currency;
+                optionTo.text = currency;
+                selectTo.add(optionTo);
+            });
+        })
+        .catch(error => console.error('Error:', error));
+</script>
+
+</html>

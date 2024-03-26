@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Cinzel:wght@500&family=Croissant+One&family=Major+Mono+Display&family=Nova+Square&family=Pacifico&family=Press+Start+2P&family=Rajdhani:wght@300&family=Roboto+Condensed&family=Teko:wght@300&family=Ubuntu:wght@300&family=Vina+Sans&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+        }
+
+        .navbar {
+            position: fixed;
+            height: 12vh;
+            width: 100%;
+            background-color: rgba(229, 233, 255, 0.849);
+            padding-top: 3vh;
+            z-index: 1;
+        }
+
+        .first {
+            height: 80vh;
+            width: 100%;
+            background-color: rgb(229, 233, 255);
+        }
+
+        .second {
+            height: 25vh;
+            width: 90.9%;
+            background-color: rgb(26, 17, 55);
+            padding-top: 2vh;
+            padding-left: 9vw;
+        }
+
+        .box {
+            height: 7vh;
+            width: 16vw;
+            display: flex;
+        }
+
+        .logo {
+            height: 8vh;
+            width: 8vw;
+            margin-top: 1vh;
+            margin-right: -1vw;
+
+        }
+
+        .text {
+            font-family: Bebas Neue;
+            font-size: x-large;
+        }
+
+        .anchor {
+            padding-top: 2.5vh;
+            margin-left: 22vw;
+        }
+
+        .ae {
+            text-decoration: none;
+            color: black;
+            font-size: 1.4rem;
+            margin-right: 2vw;
+            font-family: Rajdhani;
+            font-weight: bold;
+        }
+
+        .joinus {
+            margin-left: auto;
+            margin-right: 1vw;
+            margin-top: 1.5vh;
+            border: 1px solid rgb(26, 17, 55);
+            border-radius: 25px;
+            width: 8vw;
+            padding-left: 1.6vw;
+            padding-top: 2vh;
+            height: 5.5vh;
+            background-color: black;
+        }
+
+        .ee {
+            text-decoration: none;
+            color: white;
+            font-family: Rajdhani;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        .third {
+            height: 82vh;
+            width: 100%;
+            /* background-color: darkslateblue; */
+            /* background-color: white; */
+            background-color: white;
+            padding-top: 20vh;
+            /* padding-left: 5vw; */
+        }
+
+        .pos {
+            padding-top: 17vh;
+            padding-left: 8vw;
+            height: 35vh;
+            width: 27vw;
+            font-size: 3.5rem;
+            font-family: Bebas Neue;
+        }
+
+        .pose {
+            padding-left: 8vw;
+            width: 29vw;
+            font-size: 1.3rem;
+            font-family: Roboto Condensed;
+        }
+
+        .pop {
+            margin-top: 14vh;
+            margin-left: 37.4vw;
+            height: 15.4vh;
+        }
+
+        .oops {
+            /* margin-top: 30vh; */
+            height: 45vh;
+            margin-left: 20vw;
+        }
+
+        .button {
+            margin-top: 4vh;
+            margin-left: 8vw;
+            height: 7.5vh;
+            width: 13vw;
+            border: 1px solid rgb(26, 17, 55);
+            background-color: black;
+            padding-top: 1vh;
+            border-radius: 15px;
+        }
+
+        .ko {
+            font-size: 1.8rem;
+            text-decoration: none;
+            color: white;
+            padding-left: 1.5vw;
+        }
+
+        .ff {
+            padding-top: 1.7vh;
+            height: 3vh;
+            width: 3vw;
+        }
+
+        .ssss {
+            margin-top: -2vh;
+            height: 25vh;
+            margin-left: 45vw;
+        }
+
+        .shit {
+            position: absolute;
+            z-index: 0;
+            margin-left: 10vw;
+            margin-top: 16.9vh;
+            height: 90%;
+            /* margin-bottom: -2vh;  */
+        }
+
+        .ae:hover {
+            text-decoration: underline;
+            color: rgb(26, 17, 55);
+        }
+
+        .ee:hover {
+            text-decoration: underline;
+        }
+
+        .oopss {
+            width: 100%;
+            /* height: 100vh; */
+            /* margin-top: 15vh; */
+            /* background-color: black; */
+            display: flex;
+        }
+
+        .poop {
+            height: 70vh;
+            width: 60vw;
+            margin-top: 10vh;
+            padding-left: 5vw;
+        }
+
+        .hand {
+            color: rgb(55, 108, 204);
+            font-size: 2.5rem;
+            font-family: Nova Square;
+            text-decoration: underline;
+            /* animation: fadeIn 2s ease-in-out; */
+        }
+
+        .full {
+            margin-top: 5vh;
+            font-size: 1.3rem;
+        }
+
+        .fourth {
+            height: 91vh;
+            width: 100%;
+            background-color: rgb(229, 233, 255);
+            padding-top: 20vh;
+        }
+
+        .lol {
+            font-size: 2rem;
+            color: rgb(55, 108, 204);
+            font-family: Bebas Neue;
+            text-decoration: underline;
+            padding-left: 11vw;
+        }
+
+        .pusi {
+            margin-top: 5vh;
+            height: 70vh;
+            width: 80vw;
+            margin-left: 10vw;
+            /* border: 1px solid black; */
+        }
+
+        .piyush {
+            height: 50vh;
+            width: 25vw;
+            border: 1px solid;
+            margin-top: 10vh;
+            margin-left: 1vw;
+        }
+
+        .papa {
+            position: absolute;
+            z-index: 0;
+            height: 60vh;
+            width: 25vw;
+            margin-left: 1vw;
+            /* padding */
+
+        }
+
+        .papas {
+            position: absolute;
+            z-index: 0;
+            height: 60vh;
+            width: 25vw;
+            margin-left: 27vw;
+
+        }
+
+        .papass {
+            position: absolute;
+            z-index: 0;
+            height: 60vh;
+            width: 25vw;
+            margin-left: 53.25vw;
+
+        }
+
+        .last {
+            height: 60vh;
+            width: 100%;
+            background-color: rgb(26, 17, 55);
+            padding-top: 5vh;
+        }
+
+        .sis {
+            height: 25vh;
+            border-bottom: 1px solid black;
+            width: 80vw;
+            margin-left: 10vw;
+            padding-top: 5vh;
+            display: flex;
+        }
+
+        .bro {
+            height: 10vh;
+            width: 20vw;
+            /* border: 1px solid; */
+            margin-left: 15vw;
+        }
+
+        .bros {
+            height: 15vh;
+            width: 10vw;
+            /* border: 1px solid; */
+            margin-left: 2vw;
+        }
+
+        .aef {
+
+            text-decoration: none;
+            color: white;
+            font-size: 1.3rem;
+            margin-right: 2vw;
+            font-family: Rajdhani;
+            font-weight: bold;
+        }
+
+        .aef:hover {
+            text-decoration: underline;
+        }
+
+        .soup {
+            height: 8vh;
+            width: 40vw;
+            /* border: 1px solid black; */
+            margin-top: 3vh;
+            margin-left: 35vw;
+        }
+
+        .photo {
+            height: 8vh;
+            width: 8vw;
+        }
+
+        .boops {
+            background-color: red;
+            border: 1px solid red;
+            border-radius: 50%;
+            width: 4.5vw;
+            height: 9vh;
+            padding-top: 1vh;
+            padding-left: 1vw;
+            margin-left: 8vw;
+        }
+
+        .ww {
+            height: 7vh;
+        }
+
+        .popiya {
+            font-size: 2rem;
+            font-family: Bebas Neue;
+            text-decoration: underline;
+            margin-left: 42vw;
+        }
+
+        .shop {
+            height: 32vh;
+            width: 26vw;
+            border: 1px solid;
+            background-color: rgb(230, 230, 239);
+            margin-left: 17vw;
+            border-radius: 15px;
+        }
+
+        .shop2 {
+            height: 32vh;
+            width: 37vw;
+            border: 1px solid;
+            background-color: rgb(239, 232, 233);
+            margin-left: 2vw;
+            border-radius: 15px;
+        }
+
+        .shop3 {
+            height: 32vh;
+            width: 37vw;
+            border: 1px solid;
+            margin-left: 17vw;
+            background-color: rgb(241, 231, 222);
+            border-radius: 15px;
+        }
+
+        .shop4 {
+            height: 32vh;
+            width: 26vw;
+            border: 1px solid;
+            background-color: rgb(231, 236, 240);
+            margin-left: 2vw;
+            border-radius: 15px;
+        }
+        .shop:hover{
+            box-shadow: 10px 5px 5px red;
+        }
+        .shop2:hover{
+            box-shadow: 10px 5px 5px red;
+        }
+        .shop3:hover{
+            box-shadow: 10px 5px 5px red;
+        }
+        .shop4:hover{
+            box-shadow: 10px 5px 5px red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div style="display: flex;">
+            <div class="box">
+                <img src="logo2.svg" class="logo" alt="Logo">
+                <h3 class="text">Global Exchange<span style="color: rgb(26,17,55);"> Hub</span></h3>
+            </div>
+            <div class="anchor">
+                <a href="index.html" class="ae">Home</a>
+                <a href="#desc" class="ae">About</a>
+                <a href="#team" class="ae">Team-Info</a>
+                <a href="#contact" class="ae">Contact-Us</a>
+            </div>
+            <div class="joinus">
+                <a href="login.html" class="ee">Get in touch
+
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="first">
+        <div>
+            <div style="display: flex;">
+                <div>
+                    <p class="pos">The world's trusted currency <span style="color: rgb(26,17,55);">converter</span>
+                    </p>
+                    <p class="pose">Effortless Currency Conversion: Simplifying Global Transactions.</p>
+                    <div class="button">
+                        <a href="converter.html" class="ko" style="display: flex;font-family: Teko;">Get Started
+                            <img class="ff" src="rightarrow.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div><img src="susu.png" class="shit"></div>
+            </div>
+        </div>
+    </div>
+    <div class="second">
+    </div>
+    <a id="desc"></a>
+    <div class="third">
+        <p class="popiya">The Best Platform</p>
+        <div style="display: flex;margin-top: 3vh;">
+            <div class="shop">
+                <img src="lock.png" style="position: absolute;height: 12vh;margin-left:19vw ;margin-top: -1.5vh;">
+                <p style="margin-left: 2vw;font-size: 1.2rem;margin-top: 2vh;font-family: Ubuntu;
+                font-weight: 700;color: rgb(54,46,125);text-decoration: underline;">High Security</p>
+
+
+                <p
+                    style="margin-left: 1.5vw;font-size: 1.5rem;margin-right: 1.5vw;margin-top: 2vh;font-family: Ubuntu;color: rgb(54,46,125);">
+                    "Your login details, our utmost protection – advanced encryption for your privacy."</p>
+
+            </div>
+            <div class="shop2">
+                <p style="margin-left: 2vw;font-size: 1.2rem;margin-top: 2vh;font-family: Ubuntu;
+                font-weight: 700;color: rgb(152,90,101);text-decoration: underline;">Accurate Exchange Rates</p>
+                <img src="target.png"
+                    style="position: absolute;height: 30vh;z-index: 0;margin-left: 23vw;margin-top: 2vh;">
+                <p
+                    style="margin-left: 2vw;font-size: 1.5rem;font-family: Ubuntu;color: rgb(152,90,101);margin-top: 2vh;margin-right: 2.5vw;z-index: 2;">
+                    "Currency converters offer up-to-date and accurate exchange rates."</p>
+
+            </div>
+        </div>
+        <div style="display: flex;margin-top: 3vh;">
+            <div class="shop3">
+                <p style="margin-left: 2vw;font-size: 1.2rem;margin-top: 2vh;font-family: Ubuntu;
+                font-weight: 700;color: rgb(152,90,101);text-decoration: underline;" >Convenience and Accessibility</p>
+                <p style="margin-left: 2vw;font-size: 1.5rem;font-family: Ubuntu;color: rgb(152,90,101);margin-top: 2vh;margin-right: 2.5vw;z-index: 2;" >"Users can access them anytime and anywhere, providing convenience for travelers, businesses, and individuals involved in international trade."</p>
+            </div>
+            <div class="shop4">
+                <p style="margin-left: 2vw;font-size: 1.2rem;margin-top: 2vh;font-family: Ubuntu;
+                font-weight: 700;color: rgb(54,46,125);text-decoration: underline;" >UI-Interface</p>
+                <p style="margin-left: 2vw;font-size: 1.5rem;font-family: Ubuntu;color: rgb(54,46,125);margin-top: 2vh;margin-right: 2.5vw;z-index: 2;" >
+                    "Simplicity at its best: effortlessly convert currencies with our user-friendly interface."</p>
+            </div>
+        </div>
+    </div>
+    <a id="team"></a>
+    <div class="fourth">
+        <p class="lol">Meet our team</p>
+        <div class="pusi"><img src="parkhi.png" class="papa">
+            <div style="display: flex;">
+                <div class="piyush" style="background-color: rgb(233,179,162);">
+
+                </div>
+
+                <img src="piyush.png" class="papas">
+                <div class="piyush" style="background-color: rgb(113,230,180);">
+
+                </div>
+                <img src="prabh.png" class="papass">
+                <div class="piyush" style="background-color: rgb(233,185,15)">
+
+                </div>
+            </div>
+            <div style="display: flex;;">
+                <p style="margin-left: 8vw;font-family: Pacifico;font-size: 1.5rem;">Parkhi Garg</p>
+                <p style="margin-left: 14vw;font-family: Pacifico;font-size: 1.5rem;">Piyush Makkar</p>
+                <p style="margin-left: 12vw;font-family: Pacifico;font-size: 1.5rem;">Prabhrythm Singh</p>
+            </div>
+        </div>
+    </div>
+    <a id="contact"></a>
+    <div class="last">
+        <div class="sis">
+            <div class="box">
+                <img src="logo2.svg" class="logo" alt="Logo">
+                <h3 class="text"> <span style="color: rgba(255, 255, 255, 0.712);">Global Exchange Hub</span></h3>
+            </div>
+            <div class="bro">
+                <a href="#" class="aef">Currecny Converter</a>
+
+                <a href="#contact" class="aef">Feedback</a>
+            </div>
+            <div class="bros">
+                <a href="#contact" class="aef">Support</a>
+                <a href="#contact" class="aef">Services</a>
+                <a href="#contact" class="aef">Something</a>
+            </div>
+        </div>
+        <div class="soup">
+            <a href="https://www.instagram.com/piyushmakkar98/"><img src="insta.svg" alt="" class="photo"></a>
+            <a href="#contact"><img class="photo" src="yt.svg" alt=""></a>
+            <!-- <a href="#contact"><img class="photo" csrc="twitter.svg" alt=""></a> -->
+            <a href="#contact"><img class="photo" src="facebook.svg" alt=""></a>
+        </div>
+    </div>
+</body>
+
+</html>
